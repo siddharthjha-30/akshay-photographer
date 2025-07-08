@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
@@ -25,8 +26,44 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  background: #faf9f6;
   line-height: 1.6;
+}
+.btn-down, .submit {
+  background: #222;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.7em 1.5em;
+  transition: background 0.2s;
+}
+.btn-down:hover, .submit:hover {
+  background: #e63946;
+}
+a, button, .btn-down, .submit {
+  touch-action: manipulation;
+}
+/* Section fade-in animation */
+.section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+.section.visible {
+  opacity: 1;
+  transform: none;
+}
+img, .btn-down, .submit {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+/* Accessibility: focus states */
+a:focus, button:focus, .btn-down:focus, .submit:focus {
+  outline: 2px solid #e63946;
+  outline-offset: 2px;
 }
 
 button,
