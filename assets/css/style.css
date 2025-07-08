@@ -16,6 +16,13 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
+
+/* Responsive base font size for mobile */
+@media (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+}
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
@@ -43,6 +50,12 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 1rem;
+  }
 }
 .vh-100 {
   min-height: 100vh;
@@ -140,6 +153,15 @@ header .overlay {
   color: var(--light-color);
 }
 
+@media (max-width: 600px) {
+  .header-content h1 {
+    font-size: 2.5rem;
+  }
+  .header-content h3 {
+    font-size: 1.3rem;
+  }
+}
+
 .header-content h3 {
   color: var(--light-color);
   font-weight: 300;
@@ -173,6 +195,12 @@ header .overlay {
   height: 480px;
   overflow: hidden;
 }
+
+@media (max-width: 600px) {
+  .about-left {
+    height: 220px;
+  }
+}
 /* button down and title -reusable */
 .btn-down {
   font-size: 3rem;
@@ -180,6 +208,13 @@ header .overlay {
   margin-top: 2rem;
   margin-left: 50%;
   transition: var(--transition);
+}
+
+@media (max-width: 600px) {
+  .btn-down {
+    font-size: 2rem;
+    margin-left: 40%;
+  }
 }
 .btn-down:hover {
   opacity: 0.8;
@@ -224,6 +259,12 @@ header .overlay {
   margin-top: 4rem;
   text-align: center;
 }
+
+@media (max-width: 600px) {
+  .work-bottom > div .icon img {
+    width: 32px;
+  }
+}
 .work-bottom > div .icon img {
   width: 50px;
   margin: 0 auto 1.7rem auto;
@@ -236,6 +277,16 @@ header .overlay {
   transform: scale(0.9);
 }
 
+@media (max-width: 600px) {
+  .portfolio-grid > div {
+    height: 180px;
+  }
+  .portfolio-grid > div img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 /* contact */
 #contact {
   background-color: rgb(248, 248, 248);
@@ -243,6 +294,15 @@ header .overlay {
 .contact-content {
   flex-direction: column;
   align-items: stretch;
+}
+
+@media (max-width: 600px) {
+  .contact-content {
+    flex-direction: column;
+  }
+  .contact-right {
+    display: none;
+  }
 }
 .contact-left {
   margin-bottom: 5rem;
@@ -303,6 +363,12 @@ header .overlay {
   transition: var(--transition);
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+  .contact-form .submit {
+    width: 100%;
+  }
+}
 .contact-form .submit:focus {
   border: none;
 }
@@ -345,6 +411,12 @@ header .overlay {
   transform: scale(0.9);
 }
 
+@media (max-width: 600px) {
+  .insta-grid > div {
+    height: 120px;
+  }
+}
+
 /* footer */
 #footer {
   background-color: var(--dark-color);
@@ -352,6 +424,20 @@ header .overlay {
 }
 .footer-content {
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .footer-content > div:first-child div {
+    width: 60px;
+    height: 60px;
+    margin: 2rem auto;
+  }
+  .footer-content h3 {
+    font-size: 1.5rem;
+  }
+  .footer-content ul li a {
+    font-size: 1.1rem;
+  }
 }
 .footer-content h3 {
   color: var(--light-color);
